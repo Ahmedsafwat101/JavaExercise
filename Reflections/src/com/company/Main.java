@@ -6,9 +6,9 @@ import java.util.Arrays;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         //Get reference to Test class
-        Class myObjectClass = Test.class;
+        Class myObjectClass = Class.forName("com.company.Test");
 
         System.out.println("Public Fields:");
 
