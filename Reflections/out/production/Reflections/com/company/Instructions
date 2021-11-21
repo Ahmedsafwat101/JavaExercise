@@ -1,0 +1,3 @@
+the required topics for today as study
+Java reflection -> assignment create a program that takes a class name in full qualified name (com.some.package.Test) then prints the fields  in this format ` private/public DataType. fieldName`
+for example private Integer id
