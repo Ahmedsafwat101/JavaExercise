@@ -1,3 +1,8 @@
+Task 1
 the required topics for today as study
 Java reflection -> assignment create a program that takes a class name in full qualified name (com.some.package.Test) then prints the fields  in this format ` private/public DataType. fieldName`
 for example private Integer id
+
+Task 2
+try to create an object using reflection
+then try to print the values in the private fields
