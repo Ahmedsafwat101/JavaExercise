@@ -4,7 +4,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
 
-public class Main {
+public class Task1 {
 
     public static void main(String[] args) throws ClassNotFoundException {
         //Get reference to Test class
@@ -15,7 +15,7 @@ public class Main {
         // for accessing fields
         Field[] publicFields = myObjectClass.getFields(); // accessing public fields only
         Arrays.stream(publicFields).forEach(
-                field -> System.out.println(checkModifierPropertiesType(field.getModifiers()) + "," + field.getType().getSimpleName() + "," + field.getName())
+                field -> System.out.println(checkModifierPropertiesType(field.getModifiers(),field,myObjectClass) + "," + field.getType().getSimpleName() + "," + field.getName())
         );
 
         System.out.println("\nAll Fields:");
@@ -23,12 +23,11 @@ public class Main {
         // for accessing fields
         Field[] allFields = myObjectClass.getDeclaredFields(); // accessing all fields
         Arrays.stream(allFields).forEach(
-                field -> System.out.println(checkModifierPropertiesType(field.getModifiers()) + "," + field.getType().getSimpleName() + "," + field.getName())
+                field -> System.out.println(checkModifierPropertiesType(field.getModifiers(),field,myObjectClass) + "," + field.getType().getSimpleName() + "," + field.getName())
         );
-
     }
 
-    private static String checkModifierPropertiesType(int modifier) {
+    private static String checkModifierPropertiesType(int modifier,Field field,Class myObjectClass) {
         if (Modifier.isProtected(modifier)) {
             return "Protected";
         } else if (Modifier.isPrivate(modifier)) {
@@ -38,4 +37,5 @@ public class Main {
         }
         return "";
     }
+
 }
