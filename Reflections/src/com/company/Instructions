@@ -11,3 +11,4 @@ Task 3
 Create an application that takes a path to .class file as input (path to compiled class file Test.class not .java)
 then it create a new instance of this object and print the values
 the path could be a single class file or a jar
+full path c:/com/...
