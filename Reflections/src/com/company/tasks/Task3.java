@@ -1,4 +1,6 @@
-package com.company;
+package com.company.tasks;
+
+import com.company.utils.Helper;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -12,7 +14,7 @@ public class Task3 {
 
         Scanner scanner = new Scanner(System.in);
         String path = scanner.nextLine();
-        Class<?> myClass = Class.forName(getPrivateFieldValue(path));
+        Class<?> myClass = Class.forName(Helper.getPrivateFieldValue(path));
 
         //Make instance of the class constructor
         Object myObjectClass = myClass.getDeclaredConstructor().newInstance();
@@ -22,7 +24,7 @@ public class Task3 {
         Arrays.stream(allFields).forEach(
 
                 field -> {
-                    if (checkModifierPropertiesType(field.getModifiers()).equals("Private")) {
+                    if (Helper.checkModifierPropertiesType(field.getModifiers()).equals("Private")) {
                         field.setAccessible(true);
                         try {
                             //Get value
@@ -41,23 +43,9 @@ public class Task3 {
 
     }
 
-    private static String checkModifierPropertiesType(int modifier) {
-        if (Modifier.isProtected(modifier)) {
-            return "Protected";
-        } else if (Modifier.isPrivate(modifier)) {
-            return "Private";
-        } else if (Modifier.isPublic(modifier)) {
-            return "Public";
-        }
-        return "";
-    }
 
 
 
-    private static String getPrivateFieldValue(String path){
-        String fileNameWithOutExt = "com/company/Test.class".replaceFirst("[.][^.]+$", "");
-        fileNameWithOutExt = fileNameWithOutExt.replace("/",".");
-        System.out.println(fileNameWithOutExt);
-        return fileNameWithOutExt;
-    }
+
+
 }

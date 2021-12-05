@@ -1,4 +1,6 @@
-package com.company;
+package com.company.tasks;
+
+import com.company.utils.Helper;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -18,7 +20,7 @@ public class Task2 {
         Arrays.stream(allFields).forEach(
 
                 field -> {
-                    if (checkModifierPropertiesType(field.getModifiers()).equals("Private")) {
+                    if (Helper.checkModifierPropertiesType(field.getModifiers()).equals("Private")) {
                         field.setAccessible(true);
                         try {
                             //Get value
@@ -36,17 +38,5 @@ public class Task2 {
         );
 
     }
-
-    private static String checkModifierPropertiesType(int modifier) {
-        if (Modifier.isProtected(modifier)) {
-            return "Protected";
-        } else if (Modifier.isPrivate(modifier)) {
-            return "Private";
-        } else if (Modifier.isPublic(modifier)) {
-            return "Public";
-        }
-        return "";
-    }
-
 
 }
