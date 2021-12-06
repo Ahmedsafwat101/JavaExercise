@@ -1,6 +1,5 @@
 package com.company.webserver;
 
-import com.company.HttpMirror;
 import com.company.customannotaions.ABBAS;
 import com.company.utils.Helper;
 import org.reflections.Reflections;
@@ -36,6 +35,7 @@ public class Task1 {
             System.out.println(myObjectClass);
         }
 
+        //HttpServer
         HttpMirror.start();
 
     }

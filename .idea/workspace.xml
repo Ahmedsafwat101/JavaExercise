@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d3de2ac-1d7c-4a3a-836a-006ab6e0275f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_28_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaExercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaExercise.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflections/src/com/company/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/src/com/company/tasks/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflections/src/com/company/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/src/com/company/tasks/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflections/src/com/company/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/src/com/company/tasks/Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflections/src/com/company/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/src/com/company/tasks/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflections/src/com/company/utils/Helper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reflections/src/com/company/HttpMirror.java" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/src/com/company/webserver/HttpMirror.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reflections/src/com/company/webserver/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/src/com/company/webserver/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/HttpMirror.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/webserver/Task1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/webserver/Task1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +21,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -118,6 +106,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -213,6 +203,7 @@
       <workItem from="1638700109106" duration="881000" />
       <workItem from="1638702011751" duration="785000" />
       <workItem from="1638705492346" duration="12102000" />
+      <workItem from="1638814811358" duration="9914000" />
     </task>
     <servers />
   </component>
